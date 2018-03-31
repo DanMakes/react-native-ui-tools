@@ -2,7 +2,7 @@ import BorderedButton from './src/BorderedButton'
 import Button from './src/Button'
 import Item from './src/Item'
 import Modal from './src/Modal'
-import ModalSelector from './src/ModalSelector'
+import Selector from './src/ModalSelector'
 // import ModalUpdate from './src/ModalUpdate'
 import SimpleButton from './src/SimpleButton'
 import Spinner from './src/Spinner'
@@ -14,7 +14,7 @@ module.exports = {
     Button,
     Item,
     Modal,
-    ModalSelector,
+    Selector,
     // ModalUpdate,
     SimpleButton,
     Spinner,
