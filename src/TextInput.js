@@ -2,7 +2,7 @@ import React from 'react';
 import {
     TextInput
 } from 'react-native';
-import {fontFamily} from "../../helpers/config";
+import {fontFamily} from "../config";
 
 export default class Pext extends React.PureComponent {
     render() {

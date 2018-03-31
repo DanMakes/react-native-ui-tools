@@ -2,7 +2,7 @@ import React from 'react';
 import {
     View
 } from 'react-native';
-import {fontFamily} from "../../helpers/config";
+import {fontFamily} from "../config";
 import ModalSelector from 'react-native-modal-selector';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Text from './Text';

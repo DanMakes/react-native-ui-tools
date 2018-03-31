@@ -3,7 +3,7 @@ import {
     StyleSheet,
     Text, TouchableNativeFeedback, View
 } from 'react-native';
-import {fontFamily} from "../../helpers/config";
+import {fontFamily} from "../config";
 
 export default class BorderedButton extends React.PureComponent {
     render() {

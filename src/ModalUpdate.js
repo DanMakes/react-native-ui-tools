@@ -9,9 +9,8 @@ import {
 } from 'react-native';
 import {
     colors,
-    firstFont,
-    iconFont
-} from '../constants/AppConstants'
+    fontFamily
+} from '../config'
 import Modal from './Modal';
 import axios from 'axios'
 import DeviceInfo from'react-native-device-info';
@@ -154,19 +153,17 @@ const styles = StyleSheet.create({
     headerText: {
         color: colors.white,
         fontSize: 18,
-        fontFamily: firstFont,
+        fontFamily: fontFamily,
         fontWeight: 'bold',
         textAlign:'center'
     },
     iconClose: {
         color: colors.white,
-        fontFamily: iconFont,
         fontSize: 20
     },
     icon: {
         color: colors.white,
         fontSize: 24,
-        fontFamily: iconFont,
     },
     iconFab: {
         height: 40,
@@ -181,12 +178,12 @@ const styles = StyleSheet.create({
         backgroundColor: colors.gray95
     },
     version: {
-        fontFamily: firstFont,
+        fontFamily: fontFamily,
         fontWeight: 'bold',
         textAlign: 'right'
     },
     changeLog: {
-        fontFamily: firstFont,
+        fontFamily: fontFamily,
         color: colors.gray46,
         textAlign: 'right',
         marginRight: 8,

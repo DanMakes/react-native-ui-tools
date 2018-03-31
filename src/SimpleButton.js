@@ -3,7 +3,7 @@ import {
     StyleSheet,
     Text, TouchableNativeFeedback, View
 } from 'react-native';
-import {colors,fontFamily} from "../../helpers/config";
+import {colors,fontFamily} from "../config";
 
 export default class Button extends React.PureComponent {
     render() {

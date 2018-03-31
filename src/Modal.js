@@ -11,7 +11,7 @@ import {
 } from 'react-native'
 import {
   colors
-} from '../../helpers/config'
+} from '../config'
 class Modal extends Component {
   constructor () {
     super();
