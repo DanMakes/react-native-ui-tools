@@ -9,6 +9,7 @@ import Spinner from './src/Spinner'
 import Text from './src/Text'
 import TextInput from './src/TextInput'
 import ListButton from './src/ListButton'
+import Error from './src/Error'
 
 module.exports = {
     BorderedButton,
@@ -21,5 +22,6 @@ module.exports = {
     Spinner,
     Text,
     TextInput,
-    ListButton
+    ListButton,
+    Error
 };
