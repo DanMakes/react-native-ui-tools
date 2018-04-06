@@ -8,6 +8,7 @@ import SimpleButton from './src/SimpleButton'
 import Spinner from './src/Spinner'
 import Text from './src/Text'
 import TextInput from './src/TextInput'
+import ListButton from './src/ListButton'
 
 module.exports = {
     BorderedButton,
@@ -19,5 +20,6 @@ module.exports = {
     SimpleButton,
     Spinner,
     Text,
-    TextInput
+    TextInput,
+    ListButton
 };
