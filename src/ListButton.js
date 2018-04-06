@@ -14,10 +14,10 @@ export default class ListButton extends React.PureComponent {
                 {...this.props}
                 background={TouchableNativeFeedback.SelectableBackground()}>
                 <View style={[styles.button,styles.listButton,this.props.style]}>
-                    <Text style={{fontSize:20, marginRight:20}}>
+                    <Text style={{fontSize:20, marginRight:20,...this.props.labelStyle}}>
                         {this.props.label}
                     </Text>
-                    <Icon name={this.props.icon} size={30} />
+                    <Icon name={this.props.icon} size={30} style={this.props.iconStyle} />
                 </View>
             </TouchableNativeFeedback>
         );
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         justifyContent:'flex-end',
         alignItems:'center',
         paddingRight:20,
-        paddingVertical:20
+        paddingVertical:20,
+        borderRadius:0
     }
 });
