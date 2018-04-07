@@ -10,6 +10,7 @@ import Text from './src/Text'
 import TextInput from './src/TextInput'
 import ListButton from './src/ListButton'
 import Error from './src/Error'
+import ModalAlert from './src/ModalAlert'
 
 module.exports = {
     BorderedButton,
@@ -23,5 +24,6 @@ module.exports = {
     Text,
     TextInput,
     ListButton,
-    Error
+    Error,
+    ModalAlert
 };
