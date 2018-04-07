@@ -64,7 +64,8 @@ module.exports = {
         marginBottom:20,
         backgroundColor:'white',
         borderRadius:50,
-        flexDirection:'row'
+        flexDirection:'row',
+        justifyContent:'center'
     },
     errorText:{
         color: 'red',
