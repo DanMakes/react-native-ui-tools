@@ -133,9 +133,13 @@ const styles = StyleSheet.create({
         borderRadius: 8,
         shadowRadius: 3,
         shadowOpacity: 0.7,
-        padding: 16
+        padding: 16,
+        flex:1
     },
     row: {
         paddingRight: 4
+    },
+    url:{
+        fontSize:18
     }
 });
