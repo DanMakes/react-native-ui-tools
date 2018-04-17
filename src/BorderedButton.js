@@ -23,10 +23,9 @@ export default class BorderedButton extends React.PureComponent {
 
 const styles = StyleSheet.create({
     borderedButton:{
-        width: '90%',
+        width: '100%',
         height: 50,
         marginBottom: 10,
-        borderRadius: 10,
         borderWidth: 1,
         borderColor: '#fff',
         justifyContent: 'center',

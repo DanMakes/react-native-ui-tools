@@ -16,7 +16,8 @@ export default class Pext extends React.PureComponent {
                     {
                         fontFamily,
                         color: '#fff',
-                        fontSize: 20
+                        fontSize: 20,
+                        height: 60
                     }, this.props.style]} />
         );
     }
