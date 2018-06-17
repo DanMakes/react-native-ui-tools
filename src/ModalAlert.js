@@ -29,7 +29,7 @@ export default class ModalExample extends Component {
     let modalContent = <View/>;
     if (this.props.loading)
       modalContent = <View style={{padding: 20}}>
-        <ActivityIndicator size={50}/>
+        <ActivityIndicator size={Platform.andorid?50:2}/>
       </View>;
     else {
       modalContent = <View>
