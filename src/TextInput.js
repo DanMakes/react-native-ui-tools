@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-    TextInput
+    TextInput,
+    Platform
 } from 'react-native';
 import {fontFamily} from "../config";
 
@@ -16,7 +17,9 @@ export default class Pext extends React.PureComponent {
                     {
                         fontFamily,
                         color: '#fff',
-                        fontSize: 20,
+                        borderWidth: Platform.OS === 'ios' ? 1 : 0,
+                        borderColor: '#fff',
+                        fontSize: Platform.OS === 'android' ? 20 : 16,
                         height: 60
                     }, this.props.style]} />
         );
