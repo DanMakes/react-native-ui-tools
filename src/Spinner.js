@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     ActivityIndicator,
-    View
+    View,
+    Platform
 } from 'react-native';
 
 export default class Spinner extends React.PureComponent {
@@ -18,7 +19,7 @@ export default class Spinner extends React.PureComponent {
                     backgroundColor: 'rgba(255,255,255,0.7)',
                     justifyContent: 'center'
                 }}>
-                    <ActivityIndicator size={50}/>
+                    <ActivityIndicator size={Platform.OS === 'android' ? 50 : 1}/>
                 </View>
             );
         return null;

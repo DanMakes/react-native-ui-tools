@@ -1,20 +1,32 @@
 import React from 'react';
 import {
     StyleSheet,
-    Text, TouchableNativeFeedback, View
+    Text, TouchableNativeFeedback, View,TouchableOpacity,
+    Platform
 } from 'react-native';
 import {colors,fontFamily} from "../config";
 
 export default class Button extends React.PureComponent {
     render() {
+        if(Platform.OS === 'android')
+            return (
+                <TouchableNativeFeedback
+                    {...this.props}
+                    background={TouchableNativeFeedback.SelectableBackground()}>
+                    <View style={[styles.button, this.props.style]}>
+                        {this.props.children}
+                    </View>
+                </TouchableNativeFeedback>
+            );
+
         return (
-            <TouchableNativeFeedback
+            <TouchableOpacity
                 {...this.props}
-                background={TouchableNativeFeedback.SelectableBackground()}>
-                <View style={[styles.button, this.props.style]}>
+                style={[styles.button, this.props.style]}>
+                <Text style={this.props.labelStyle}>
                     {this.props.children}
-                </View>
-            </TouchableNativeFeedback>
+                </Text>
+            </TouchableOpacity>
         );
     }
 }
