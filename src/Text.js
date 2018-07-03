@@ -8,7 +8,7 @@ export default class Pext extends React.PureComponent {
     render() {
         return (
 
-            <Text {...this.props} style={[{fontFamily,textAlign:'right'},this.props.style]}>
+            <Text {...this.props} style={[{fontFamily,textAlign:'right',marginBottom:-5},this.props.style]}>
                 {this.props.children}
             </Text>
         );
